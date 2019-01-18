@@ -69,8 +69,7 @@ Plug 'michaeljsmith/vim-indent-object'
 " Indentation based movements
 Plug 'jeetsukumaran/vim-indentwise'
 " Python autocompletion, go to definition.
-" WW this sometimes gives error, disable for now
-" Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim'
 " Better autocompletion
 Plug 'Shougo/neocomplcache.vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
@@ -154,6 +153,7 @@ set ls=2
 set incsearch
 " highlighted search results
 set hlsearch
+
 
 " syntax highlight on
 syntax on
@@ -384,6 +384,15 @@ highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
 highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
 highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
 
+"highlight Search guibg=LightBlue guifg=LightBlue
+"hi Search ctermbg=LightYellow
+hi Search ctermbg=Yellow
+hi Search ctermfg=Red
+
+set cursorline
+hi CursorLine ctermbg=8 ctermfg=15 "8 = dark gray, 15 = white
+hi Cursor ctermbg=15 ctermfg=8
+"
 " Window Chooser ------------------------------
 
 " mapping
@@ -409,6 +418,4 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.branch = '⭠'
 "let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
-
-inoremap jj <esc>
 

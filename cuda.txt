@@ -1,0 +1,4 @@
+--------------------------------------
+Select a gpu to run tf based service
+--------------------------------------
+CUDA_VISIBLE_DEVICES=0 python blah_server.py 
