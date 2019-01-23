@@ -1,6 +1,7 @@
-sudo apt-get update 
+[sudo]
+sudo apt-get update && sudo apt-get install curl vim exuberant-ctags git ack-grep && sudo pip install pep8 flake8 pyflakes isort yapf
 
-sudo apt-get install curl vim exuberant-ctags git ack-grep
+[root]
+apt-get update && apt-get install curl vim exuberant-ctags git ack-grep && pip install pep8 flake8 pyflakes isort yapf
 
-sudo pip install pep8 flake8 pyflakes isort yapf
-
+git clone https://github.com/securitai/toolbox.git && cp toolbox/vimrc ~/.vimrc && cp toolbox/tmux.conf ~/.tmux.conf && cp toolbox/bash_profile ~/.bash_profile
