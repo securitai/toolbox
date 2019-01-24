@@ -86,7 +86,8 @@ Plug 'fisadev/dragvisuals.vim'
 " Window chooser
 Plug 't9md/vim-choosewin'
 " Python and other languages code checker
-Plug 'scrooloose/syntastic'
+" WW: This is python pep8 style checker. disable for now
+" Plug 'scrooloose/syntastic'
 " Paint css colors with the real color
 Plug 'lilydjwg/colorizer'
 " Ack code search (requires ack installed in the system)
