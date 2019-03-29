@@ -17,7 +17,7 @@ config = tf.ConfigProto(graph_options=tf.GraphOptions(optimizer_options=tf.Optim
 sess = tf.Session(config=config)
 
 sess.run(tf.global_variables_initializer())
-iters = 10
+iters = 100
 
 # pre-warming
 sess.run(product.op)
@@ -30,5 +30,5 @@ ops = n**3 + (n-1)*n**2 # n^2*(n-1) additions, n^3 multiplications
 elapsed = (end - start)
 rate = iters*ops/elapsed/10**9
 print('\n %d x %d matmul took: %.2f sec, %.2f G ops/sec' % (n, n,
-                                                            elapsed/iters,
+                                                            elapsed,
                                                             rate,))

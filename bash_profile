@@ -16,4 +16,3 @@ alias gka='gitk --all'
 alias l='ls --color=always'
 alias ll='ls -larth --color=always'
 
-export LD_LIBRARY_PATH=.../workspace/important-installers/cudnn-9.0-linux-x64-v7.0.5/lib64/:$LD_LIBRARY_PATH
