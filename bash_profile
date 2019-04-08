@@ -12,6 +12,7 @@ alias gb='git branch'
 alias gba='git branch --all'
 alias gk='gitk'
 alias gka='gitk --all'
+alias gpom='git push origin master'
 
 alias l='ls --color=always'
 alias ll='ls -larth --color=always'
