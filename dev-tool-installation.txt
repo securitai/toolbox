@@ -1,0 +1,5 @@
+## Python and virtualenv ##
+
+apt-get install wget git vim python3 -y
+wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py
+pip install virtualenv
