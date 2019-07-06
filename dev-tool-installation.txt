@@ -3,3 +3,11 @@
 apt-get install wget git vim python3 -y
 wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py
 pip install virtualenv
+
+## iPython, Jupyter notebook ##
+pip install ipython
+pip install jupyter
+
+jupyter notebook --ip=0.0.0.0 --port=<your port> --allow-root
+
+
