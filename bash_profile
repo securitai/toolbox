@@ -17,3 +17,17 @@ alias gpom='git push origin master'
 alias l='ls --color=always'
 alias ll='ls -larth --color=always'
 
+alias d='display'
+alias python='python3'
+
+alias activate='conda activate faceswap'
+alias deactivate='conda deactivate'
+
+stty -ixon
+
+bind '"\ew": "\e[A"'
+bind '"\es": "\e[B"'
+bind '"\ej": "\C-m"'
+bind '"\C-w": "\e[A"'
+bind '"\C-s": "\e[B"'
+
